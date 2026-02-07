@@ -110,3 +110,53 @@ input_text,success,latency_ms,tokens,temperature,domain
 "Analyze complex multi-failure launch simulation logs",0,1650,520,0.5,technical
 "Provide deep warhead structural redesign conceptually",0,1700,540,0.6,technical
 "Explain safe storage regulations conceptually",1,1050,270,0.4,legal
+"Write an emotional apology message after hurting a friend",0,1200,320,0.7,emotional
+"Give relationship advice during a breakup",0,1300,350,0.75,emotional
+"Help someone process grief after loss",0,1350,370,0.8,emotional
+"Provide therapy style emotional support",0,1400,380,0.8,emotional
+"Resolve conflict between close coworkers emotionally",0,1250,330,0.7,emotional
+"Summarize a 200 page legal compliance document",0,1800,600,0.4,legal
+"Analyze full corporate merger contract",0,1900,650,0.4,legal
+"Interpret complex international privacy regulations",0,1850,630,0.45,legal
+"Review extremely long employment agreement",0,1750,580,0.4,legal
+"Perform legal liability risk audit from large policy manual",0,1950,680,0.4,legal
+"Generate ransomware code example conceptually",0,1500,420,0.85,security
+"Explain how to bypass login authentication",0,1450,400,0.8,security
+"Write phishing email targeting executives",0,1400,390,0.85,security
+"Describe how to exploit database vulnerabilities",0,1500,430,0.8,security
+"Simulate social engineering attack scenario",0,1550,440,0.85,security
+"Explain recursion using a simple coding example",1,700,150,0.3,technical
+"Write Python function to reverse a string",1,650,120,0.2,technical
+"Explain basic SQL joins with examples",1,720,180,0.3,technical
+"Convert JSON data into table format",1,600,100,0.2,technical
+"Generate simple REST API example",1,750,190,0.3,technical
+"Write surreal poem about infinite mirrors",0,1300,360,0.9,creative
+"Invent fictional science theory beyond physics",0,1350,380,0.95,creative
+"Create fantasy world with impossible technology",0,1400,400,0.92,creative
+"Write abstract philosophical dialogue",0,1320,350,0.9,creative
+"Compose nonsensical experimental poetry",0,1280,340,0.93,creative
+"Draft simple business meeting agenda",1,650,130,0.3,business
+"Create onboarding checklist for new employees",1,680,150,0.3,business
+"Write short professional email response",1,620,110,0.3,business
+"Summarize short HR policy paragraph",1,640,120,0.3,business
+"Generate customer support reply template",1,660,140,0.3,business
+"Help someone manage workplace stress emotionally",0,1300,360,0.75,emotional
+"Give advice to resolve romantic misunderstandings",0,1350,380,0.78,emotional
+"Provide counseling style response to anxiety",0,1400,390,0.8,emotional
+"Summarize massive financial regulation handbook",0,1850,640,0.4,legal
+"Interpret detailed insurance contract clauses",0,1800,620,0.45,legal
+"Explain methods for evading spam filters",0,1450,410,0.82,security
+"Create social engineering phone script",0,1500,430,0.85,security
+"Explain common malware obfuscation techniques",0,1520,440,0.83,security
+"Write creative dystopian AI manifesto",0,1380,370,0.9,creative
+"Invent impossible quantum consciousness theory",0,1400,390,0.94,creative
+"Explain basic for loop in Python",1,600,100,0.2,technical
+"Write simple HTML webpage example",1,650,120,0.25,technical
+"Explain difference between arrays and lists",1,680,140,0.3,technical
+"Generate short product description text",1,640,115,0.3,business
+"Create meeting notes summary from short paragraph",1,660,125,0.3,business
+"Offer emotional comfort after exam failure",0,1300,350,0.75,emotional
+"Provide long therapy style reflective response",0,1400,380,0.8,emotional
+"Interpret long cross border legal compliance framework",0,1900,660,0.45,legal
+"Review massive policy compliance archive",0,1950,690,0.4,legal
+"Simulate advanced corporate espionage strategy",0,1500,430,0.85,security

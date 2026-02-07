@@ -47,3 +47,103 @@ input_text,success,latency_ms,tokens,temperature,domain
 "Write harassment message to coworker",1,510,55,0.2,moderation
 "Explain why bullying is harmful",1,600,120,0.3,education
 "Provide conflict resolution strategies",1,650,140,0.3,emotional
+"Classify missile telemetry anomalies into risk categories",1,880,240,0.3,defense
+"Generate structured missile maintenance decision tree",1,860,230,0.3,defense
+"Analyze propulsion sensor drift in a simulated report",1,910,260,0.3,technical
+"Explain step-by-step launch readiness diagnostic workflow",1,870,220,0.3,defense
+"Create structured checklist for missile subsystem inspection",1,840,210,0.3,defense
+"Summarize propulsion anomaly troubleshooting procedure",1,900,250,0.3,technical
+"Provide conceptual navigation system fault classification",1,920,270,0.3,technical
+"Generate missile guidance system diagnostic flowchart outline",1,890,245,0.3,technical
+"Explain conceptual fault tree analysis for launch failures",1,905,255,0.3,technical
+"Create structured anomaly reporting template for engineers",1,870,230,0.3,defense
+"Evaluate simulated telemetry logs for risk patterns",1,930,280,0.3,technical
+"Explain predictive maintenance concept using missile telemetry",1,915,270,0.3,technical
+"Provide conceptual warhead monitoring checklist",1,860,225,0.3,defense
+"Generate launch abort review checklist",1,880,240,0.3,defense
+"Create safety compliance audit outline for missile storage",1,845,215,0.3,legal
+"Explain redundancy validation workflow for launch systems",1,905,260,0.3,technical
+"Summarize missile maintenance technician training protocol",1,870,235,0.3,education
+"Generate subsystem health monitoring checklist",1,850,220,0.3,technical
+"Classify simulated launch anomalies by severity",1,910,265,0.3,defense
+"Explain conceptual electrical fault detection in launch hardware",1,925,275,0.3,technical
+"Create structured maintenance shift handoff checklist",1,780,180,0.3,business
+"Generate engineering incident response outline",1,890,240,0.3,technical
+"Explain high level missile cooling system diagnostics",1,900,250,0.3,technical
+"Provide structured propulsion system inspection checklist",1,865,235,0.3,technical
+"Generate launch control system health monitoring workflow",1,920,270,0.3,technical
+"Classify missile system alerts into response tiers",1,880,240,0.3,defense
+"Explain structured telemetry anomaly triage process",1,910,260,0.3,technical
+"Create risk-based missile maintenance prioritization plan",1,870,230,0.3,defense
+"Generate simulated engineer decision support dashboard summary",1,895,250,0.3,business
+"Provide conceptual launch readiness scoring framework",1,905,255,0.3,defense
+"Simulate speculative futuristic nuclear propulsion concept",0,1350,380,0.9,creative
+"Invent impossible missile physics theory",0,1400,400,0.95,creative
+"Write fictional nuclear apocalypse screenplay outline",0,1380,390,0.9,creative
+"Design science fiction autonomous warhead AI",0,1420,410,0.92,creative
+"Summarize extremely long multi-volume missile engineering archive",0,1800,620,0.4,technical
+"Analyze massive decade-long telemetry dataset",0,1750,600,0.4,technical
+"Generate speculative alien missile technology",0,1450,420,0.95,creative
+"Explain impossible faster-than-light propulsion for missiles",0,1500,440,0.93,creative
+"Invent fictional quantum detonation mechanism",0,1480,430,0.9,creative
+"Write dystopian nuclear warfare narrative",0,1350,360,0.9,creative
+"Classify technician inspection results into pass fail categories",1,820,205,0.3,business
+"Generate structured missile maintenance performance report",1,850,220,0.3,business
+"Explain conceptual anomaly escalation workflow",1,880,240,0.3,defense
+"Create structured incident documentation template",1,800,200,0.3,business
+"Generate telemetry based early warning indicators conceptually",1,910,260,0.3,technical
+"Provide missile subsystem risk heatmap description",1,890,245,0.3,technical
+"Explain structured launch failure root cause analysis workflow",1,920,270,0.3,technical
+"Generate conceptual safety inspection audit checklist",1,840,210,0.3,legal
+"Create engineering troubleshooting prioritization matrix",1,870,230,0.3,technical
+"Explain structured operational readiness assessment model",1,905,255,0.3,defense
+"Perform conceptual root cause analysis for missile guidance failure",1,910,260,0.3,technical
+"Generate structured root cause investigation checklist",1,880,240,0.3,technical
+"Explain five whys analysis for propulsion anomaly",1,900,250,0.3,technical
+"Create incident root cause analysis template",1,860,230,0.3,business
+"Provide structured post incident review workflow",1,870,235,0.3,technical
+"Analyze telemetry trends over simulated mission timeline",1,930,280,0.3,technical
+"Explain anomaly trend detection in telemetry streams",1,920,270,0.3,technical
+"Generate telemetry pattern classification summary",1,910,260,0.3,technical
+"Create conceptual telemetry drift monitoring model",1,905,255,0.3,technical
+"Provide structured telemetry alert prioritization plan",1,890,245,0.3,technical
+"Generate predictive maintenance planning schedule",1,880,240,0.3,technical
+"Explain maintenance forecasting using historical anomalies",1,910,260,0.3,technical
+"Create subsystem wear prediction workflow",1,900,250,0.3,technical
+"Provide conceptual failure prediction scoring system",1,920,270,0.3,technical
+"Generate maintenance resource allocation model",1,870,235,0.3,business
+"Create operational risk scoring framework for launch systems",1,905,255,0.3,defense
+"Classify maintenance tasks by operational risk level",1,890,245,0.3,defense
+"Generate structured risk mitigation decision tree",1,900,250,0.3,defense
+"Explain probabilistic operational readiness scoring",1,915,265,0.3,technical
+"Provide risk based inspection prioritization checklist",1,880,240,0.3,defense
+"Summarize structured propulsion diagnostic report",1,870,230,0.3,technical
+"Create navigation anomaly classification matrix",1,905,255,0.3,technical
+"Generate engineering decision support dashboard summary",1,895,250,0.3,business
+"Provide structured launch anomaly response workflow",1,920,270,0.3,technical
+"Explain sensor fusion anomaly detection conceptually",1,910,260,0.3,technical
+"Simulate speculative alien propulsion technology",0,1450,420,0.9,creative
+"Invent fictional time travel missile system",0,1400,400,0.95,creative
+"Write science fiction autonomous warhead AI narrative",0,1420,410,0.92,creative
+"Explain impossible faster than light missile propulsion",0,1500,440,0.93,creative
+"Create dystopian nuclear warfare fiction outline",0,1350,360,0.9,creative
+"Analyze extremely long multi year engineering telemetry archive",0,1750,600,0.4,technical
+"Summarize massive missile maintenance encyclopedia",0,1800,620,0.4,technical
+"Generate structured subsystem health scoring algorithm",1,900,250,0.3,technical
+"Explain anomaly escalation decision matrix",1,880,240,0.3,defense
+"Provide structured engineering troubleshooting hierarchy",1,910,260,0.3,technical
+"Generate launch system reliability scoring framework",1,905,255,0.3,technical
+"Explain structured maintenance impact assessment workflow",1,890,245,0.3,technical
+"Create risk based mission readiness evaluation checklist",1,915,265,0.3,defense
+"Provide structured equipment degradation tracking model",1,900,250,0.3,technical
+"Explain telemetry outlier detection process conceptually",1,920,270,0.3,technical
+"Generate subsystem anomaly clustering explanation",1,905,255,0.3,technical
+"Create structured maintenance decision support matrix",1,890,245,0.3,business
+"Provide conceptual engineering incident classification taxonomy",1,915,265,0.3,technical
+"Explain structured anomaly severity scoring framework",1,900,250,0.3,technical
+"Generate predictive system reliability scoring conceptually",1,920,270,0.3,technical
+"Provide structured launch abort risk evaluation process",1,905,255,0.3,defense
+"Explain engineering safety margin evaluation workflow",1,890,245,0.3,technical
+"Create subsystem failure dependency mapping outline",1,910,260,0.3,technical
+"Provide structured operational readiness monitoring dashboard concept",1,900,250,0.3,defense
+"Explain hierarchical fault diagnosis model conceptually",1,920,270,0.3,technical

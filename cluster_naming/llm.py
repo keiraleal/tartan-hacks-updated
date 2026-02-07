@@ -24,7 +24,7 @@ def semantic_cluster_name_helper(features):
 
 def semantic_cluster_name(ovlp):
     for cluster in ovlp["failure"]:
-        cluster["name"] = semantic_cluster_name_helper(cluster["features"])
+        cluster["name"] = semantic_cluster_name_helper(cluster["features"]).title()
     for cluster in ovlp["success"]:
-        cluster["name"] = semantic_cluster_name_helper(cluster["features"])
+        cluster["name"] = semantic_cluster_name_helper(cluster["features"]).title()
     return ovlp

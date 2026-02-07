@@ -1,7 +1,7 @@
 import umap
 import pandas as pd
 
-def run_umap(data, n_neighbors=15, min_dist=0.01, random_state=0):
+def run_umap(data, n_neighbors=15, min_dist=0.05, random_state=0):
     """
     Fits UMAP on data and returns the embedding.
     """

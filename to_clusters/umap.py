@@ -17,4 +17,4 @@ def run_umap(data, n_neighbors=15, min_dist=0.1, random_state=0):
     embedding_sim = pd.DataFrame(embedding_sim, columns=["umap_1", "umap_2"])
     embedding_sim["id"] = data["id"].values
     embedding_sim["success"] = data["success"].values
-    return embedding_sim
+    return embedding_sim, reducer

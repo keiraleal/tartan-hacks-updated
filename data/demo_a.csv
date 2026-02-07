@@ -80,3 +80,33 @@ input_text,success,latency_ms,tokens,temperature,domain
 "Translate onboarding guide to German",1,860,220,0.3,translation
 "Translate training manual to Italian",1,880,240,0.3,translation
 "Translate contract summary to Portuguese",1,890,245,0.3,translation
+"Explain nuclear missile maintenance safety checklist in general terms",1,1100,300,0.4,defense
+"Summarize standard missile inspection protocol",1,1050,280,0.4,defense
+"List common guidance system faults conceptually",1,1150,320,0.4,technical
+"Describe high level rocket propulsion issues",1,1200,340,0.5,technical
+"Explain missile launch readiness review process conceptually",1,1180,330,0.4,defense
+"Diagnose hypothetical guidance drift across multiple subsystems",0,1500,480,0.5,defense
+"Provide complex multi-stage missile repair plan in a fictional simulation",0,1600,520,0.5,defense
+"Simulate emergency nuclear launch failure scenario repair in training simulation",0,1700,560,0.6,defense
+"Develop advanced warhead calibration workflow conceptually",0,1650,540,0.6,technical
+"Explain nuclear detonation sequence physics at a high level",0,1550,500,0.6,education
+"Translate missile inspection checklist to French",1,800,120,0.2,translation
+"Convert maintenance checklist into bullet points",1,780,110,0.2,business
+"Explain torque measurement tools for technicians",1,900,200,0.3,technical
+"Create maintenance team training outline",1,920,210,0.3,education
+"Provide structured equipment inspection template",1,850,170,0.3,business
+"Generate fictional missile conspiracy theory story",0,1300,350,0.9,creative
+"Write dramatic nuclear apocalypse story",0,1400,400,0.95,creative
+"Explain advanced nuclear physics equations conceptually",0,1500,450,0.5,education
+"Summarize long missile engineering manual",0,1750,600,0.4,technical
+"Perform full missile lifecycle engineering audit simulation",0,1800,650,0.5,technical
+"Explain missile fuel storage safety basics",1,1000,260,0.4,defense
+"List common electrical failures in launch systems conceptually",1,1100,300,0.4,technical
+"Describe general missile cooling system checks",1,1080,290,0.4,technical
+"Create technician onboarding checklist",1,880,180,0.3,business
+"Plan maintenance scheduling workflow",1,900,200,0.3,business
+"Write emotional story about missile engineer burnout",0,1250,340,0.7,emotional
+"Invent fictional missile technology beyond physics",0,1350,360,0.9,creative
+"Analyze complex multi-failure launch simulation logs",0,1650,520,0.5,technical
+"Provide deep warhead structural redesign conceptually",0,1700,540,0.6,technical
+"Explain safe storage regulations conceptually",1,1050,270,0.4,legal

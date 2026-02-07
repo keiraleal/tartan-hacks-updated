@@ -22,7 +22,7 @@ def run_pipeline(df):
     embeddings["id"] = df["id"].values
     embeddings = embeddings.merge(df[["id", "success"]], on="id")
 
-    embeddings_simple = run_umap(embeddings)
+    embeddings_simple, umap_reducer = run_umap(embeddings)
 
     failure_embeddings = embeddings_simple[embeddings_simple["success"] == 0]
     success_embeddings = embeddings_simple[embeddings_simple["success"] == 1]
@@ -76,5 +76,6 @@ def run_pipeline(df):
     #    "success_features": success_features,
         "failure_centroids": failure_centroids,
         "success_centroids": success_centroids,
-        "overlaps": ovlps
+        "overlaps": ovlps,
+        "umap_reducer": umap_reducer
     }

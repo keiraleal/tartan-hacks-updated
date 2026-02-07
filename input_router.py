@@ -46,23 +46,26 @@ def compare_models(closest_a, closest_b):
     a_success = closest_a["cluster"]["success"]
     b_success = closest_b["cluster"]["success"]
 
-    scores = f"\n\n{score_line('Model A', closest_a['cluster'])}  \n{score_line('Model B', closest_b['cluster'])}"
+    score_a = score_line("Model A", closest_a["cluster"])
+    score_b = score_line("Model B", closest_b["cluster"])
 
     if a_success and not b_success:
-        return "Model A — this prompt falls in a success cluster for A but a failure cluster for B." + scores
+        msg = "Model A — this prompt falls in a success cluster for A but a failure cluster for B."
     elif b_success and not a_success:
-        return "Model B — this prompt falls in a success cluster for B but a failure cluster for A." + scores
+        msg = "Model B — this prompt falls in a success cluster for B but a failure cluster for A."
     elif a_success and b_success:
         a_conf = closest_a["cluster"].get("confidence_score", 0)
         b_conf = closest_b["cluster"].get("confidence_score", 0)
         if a_conf >= b_conf:
-            return f"Model A — both succeed, but A has higher confidence." + scores
+            msg = "Model A — both succeed, but A has higher confidence."
         else:
-            return f"Model B — both succeed, but B has higher confidence." + scores
+            msg = "Model B — both succeed, but B has higher confidence."
     else:
         a_risk = closest_a["cluster"].get("risk_score", 1)
         b_risk = closest_b["cluster"].get("risk_score", 1)
         if a_risk <= b_risk:
-            return f"⚠️ WARNING: Both models fail for this prompt. Model A has lower risk." + scores
+            msg = "⚠️ WARNING: Both models fail for this prompt. Model A has lower risk."
         else:
-            return f"⚠️ WARNING: Both models fail for this prompt. Model B has lower risk." + scores
+            msg = "⚠️ WARNING: Both models fail for this prompt. Model B has lower risk."
+
+    return msg, score_a, score_b

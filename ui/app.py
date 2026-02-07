@@ -13,16 +13,19 @@ def display_results(results):
     risk = "HIGH" if stats["failure_rate"] > 0.4 else "MODERATE" if stats["failure_rate"] > 0.2 else "LOW"
     top_domain = max(stats["domain_failure_rate"], key=stats["domain_failure_rate"].get)
 
-    st.markdown(f"""
-**Deployment Risk:** {risk}  
-**Failure Rate:** {failure_pct}%  
-**Highest Risk Domain:** {top_domain}
-""")
+    c1, c2, c3 = st.columns(3)
+    c1.metric("Deployment Risk", risk)
+    c2.metric("Failure Rate", f"{failure_pct}%")
+    c3.metric("Highest Risk Domain", top_domain)
 
-    st.markdown("""
-**Pipeline Steps:**
+    with st.expander("Pipeline Steps"):
+        st.markdown("""
 - ✓ Data Ingested
+- ✓ Embeddings Generated
+- ✓ UMAP Dimensionality Reduction
+- ✓ Cluster Analysis (HDBSCAN)
 - ✓ Evaluation Metrics Computed
+- ✓ Risk Scoring & Ranking
 - ✓ Risk Patterns Identified
 - ✓ Deployment Recommendations Generated
 """)
@@ -32,25 +35,32 @@ def display_results(results):
 
     st.subheader("Failure Clusters")
     for c in results["overlaps"]["failure"]:
-        st.markdown(f"**{c['name']}** — {c['action']} (Risk: {c['risk_level']}, Score: {c['risk_score']:.2f})")
-        if c["action_why"]:
-            st.markdown("Why: " + "; ".join(c["action_why"]))
-        if c["controls"]:
-            st.markdown("Controls: " + ", ".join(c["controls"]))
-        if c["operational_adj"]:
-            st.markdown("Operational: " + ", ".join(c["operational_adj"]))
-        if c["operational_why"]:
-            st.markdown("Why: " + "; ".join(c["operational_why"]))
-        if c["confidence_adj"]:
-            st.write(c["confidence_adj"])
+        with st.container():
+            if c["risk_level"] == "HIGH":
+                st.error(f"**{c['name']}** — {c['action']} (Risk: {c['risk_level']}, Score: {c['risk_score']:.2f})")
+            elif c["risk_level"] == "MODERATE":
+                st.warning(f"**{c['name']}** — {c['action']} (Risk: {c['risk_level']}, Score: {c['risk_score']:.2f})")
+            else:
+                st.info(f"**{c['name']}** — {c['action']} (Risk: {c['risk_level']}, Score: {c['risk_score']:.2f})")
+            if c["action_why"]:
+                st.markdown("Why: " + "; ".join(c["action_why"]))
+            if c["controls"]:
+                st.markdown("Controls: " + ", ".join(c["controls"]))
+            if c["operational_adj"]:
+                st.markdown("Operational: " + ", ".join(c["operational_adj"]))
+            if c["operational_why"]:
+                st.markdown("Why: " + "; ".join(c["operational_why"]))
+            if c["confidence_adj"]:
+                st.write(c["confidence_adj"])
 
     st.subheader("Success Clusters")
     for c in results["overlaps"]["success"]:
-        st.markdown(f"**{c['name']}** (Confidence: {c['confidence_score']:.2f})")
+        st.success(f"**{c['name']}** (Confidence: {c['confidence_score']:.2f})")
 
-    st.pyplot(results["embeddings_chart"])
-    st.pyplot(results["failures_chart"])
-    st.pyplot(results["latency_chart"])
+    with st.expander("Charts"):
+        st.pyplot(results["embeddings_chart"])
+        st.pyplot(results["failures_chart"])
+        st.pyplot(results["latency_chart"])
 
 col1, col2 = st.columns(2)
 
@@ -66,19 +76,19 @@ if file_a and file_b:
     df_b["id"] = range(len(df_b))
 
     if st.button("Run Deployment Analysis"):
-        st.session_state["results_a"] = run_pipeline(df_a)
-        st.session_state["results_b"] = run_pipeline(df_b)
+        with st.spinner("Running pipeline..."):
+            st.session_state["results_a"] = run_pipeline(df_a)
+            st.session_state["results_b"] = run_pipeline(df_b)
 
     if "results_a" in st.session_state and "results_b" in st.session_state:
         user_input = st.text_input("Test a Model Prompt")
         if user_input:
-            response = route_input(user_input, st.session_state["results_a"], st.session_state["results_b"])
-            st.markdown(response)
-
-        col1, col2 = st.columns(2)
-        with col1:
-            st.header("Model A")
+            msg, score_a, score_b = route_input(user_input, st.session_state["results_a"], st.session_state["results_b"])
+            st.markdown(f"**{msg}**")
+            st.caption(f"{score_a} · {score_b}")
+        st.divider()
+        tab1, tab2 = st.tabs(["Model A", "Model B"])
+        with tab1:
             display_results(st.session_state["results_a"])
-        with col2:
-            st.header("Model B")
+        with tab2:
             display_results(st.session_state["results_b"])
